@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo Deportivo Escolar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Torneo Deportivo Escolar</h1>
+    <nav>
+      <ul>
+        <li><a href="#equipos">Equipos</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="equipos" class="section">
+      <h2>Equipos Participantes</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="futbol.jpg" alt="Equipo de fútbol">
+          <h3>Equipo de Fútbol</h3>
+          <p>Competirá en la categoría sub-18.</p>
+        </article>
+
+        <article class="card">
+          <img src="basket.jpg" alt="Equipo de básquet">
+          <h3>Equipo de Básquet</h3>
+          <p>Representa al curso de 5to de secundaria.</p>
+        </article>
+
+        <article class="card">
+          <img src="voleibol.jpg" alt="Equipo de voleibol">
+          <h3>Equipo de Vóleibol</h3>
+          <p>Participa en la categoría mixta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="calendario" class="section">
+      <h2>Calendario de Partidos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Deporte</th>
+            <th>Equipos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>15/10</td><td>Fútbol</td><td>A vs B</td></tr>
+          <tr><td>16/10</td><td>Básquet</td><td>C vs D</td></tr>
+          <tr><td>17/10</td><td>Vóleibol</td><td>E vs F</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="galeria" class="section">
+      <h2>Galería de Fotos</h2>
+      <div class="galeria">
+        <img src="foto1.jpg" alt="Jugadores en acción">
+        <img src="foto2.jpg" alt="Celebración del equipo">
+        <img src="foto3.jpg" alt="Premiación final">
+      </div>
+    </section>
+
+    <section id="registro" class="section">
+      <h2>Registro de Participantes</h2>
+      <form id="form-registro">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required onkeypress="soloLetras(event)">
+
+        <label for="equipo">Equipo:</label>
+        <input type="text" id="equipo" name="equipo" required onkeypress="soloLetras(event)">
+
+        <button type="submit">Enviar</button>
+        <p id="mensaje"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Torneo Deportivo Escolar - Colegio Juana Azurduy de Padilla</p>
+  </footer>
+</body>
+</html>

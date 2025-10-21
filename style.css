@@ -1,0 +1,371 @@
+/* --- Estilos generales --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #e0f2ff, #fefefe);
+  color: #333;
+}
+
+/* --- Encabezado --- */
+.header {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: white;
+  padding: 25px 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* --- Secciones --- */
+.section {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* --- Tarjetas de equipos --- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --- Tabla --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #004aad;
+  color: white;
+}
+
+/* --- Galería --- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* --- Formulario --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #003580;
+}
+
+#mensaje {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* --- Pie de página --- */
+.footer {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}/* --- Estilos generales --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #e0f2ff, #fefefe);
+  color: #333;
+}
+
+/* --- Encabezado --- */
+.header {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: white;
+  padding: 25px 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* --- Secciones --- */
+.section {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* --- Tarjetas de equipos --- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --- Tabla --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #004aad;
+  color: white;
+}
+
+/* --- Galería --- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* --- Formulario --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #003580;
+}
+
+#mensaje {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* --- Pie de página --- */
+.footer {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
